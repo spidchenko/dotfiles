@@ -1,0 +1,10 @@
+[core]
+	autocrlf = true
+[user]
+	name = Dmytro Spidchenko
+	email = spidchenko.d@gmail.com
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[init]
+	defaultBranch = main

@@ -58,7 +58,8 @@ cleancsv() {
     | tac \
     | cut -d',' -f7 \
     | awk '{print 0$0}' \
-    >> "$tmpfile"
+    | tee "$tmpfile" \
+    | tr '\n' ','
 
 
     mv "$tmpfile" "$output"
